@@ -43,7 +43,7 @@ module PageExtender
   end
 end
 
-Class.new do
+class TheRunner
   include Memoized
 
   REQUIRED_INSTANCE_CLASS = Avm::EacRedmineBase0::Instances::Base
@@ -69,13 +69,15 @@ Class.new do
       e.singleton_class.include(PageExtender)
       e.runner = self
       e
-    end.sort_by { |e| [e.sub_path] }
+    end.sort_by { |e| [e.sub_path] } # rubocop:disable Style/MultilineBlockChain
   end
 
   memoize def redmine_instance
     r = Avm::Registry.instances.detect(redmine_instance_id)
-    fatal_error "\"#{redmine_instance_id}\" is not a #{REQUIRED_INSTANCE_CLASS.stereotype_name}, but a #{r.class.stereotype_name}" unless
-    r.is_a?(REQUIRED_INSTANCE_CLASS)
+    unless r.is_a?(REQUIRED_INSTANCE_CLASS)
+      fatal_error "\"#{redmine_instance_id}\" is not a #{REQUIRED_INSTANCE_CLASS.stereotype_name}" \
+                  ", but a #{r.class.stereotype_name}"
+    end
     r
   end
 
@@ -100,4 +102,6 @@ Class.new do
   memoize def target_directory
     EacRubyUtils::Fs::ClearableDirectory.new(parsed.target_directory)
   end
-end.run
+end
+
+TheRunner.run
