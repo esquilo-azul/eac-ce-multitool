@@ -58,7 +58,7 @@ class CompleteIssueRunner
   end
 
   def complete_method_uncached
-    trf1_project? ? '/trf1/s/pd1-tools' : 'w/avm'
+    trf1_project? ? '/s/pd1-tools' : 'w/avm'
   end
 
   def complete_command
