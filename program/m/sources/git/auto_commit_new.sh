@@ -9,4 +9,4 @@ else
   THE_ARGS+=('--dirty')
 fi
 
-"${PROGRAMEIRO_RUNNER}" w/avm source auto-commit -f -r new "${THE_ARGS[@]}"
+"${PROGRAMEIRO_RUNNER}" s/eac-tools source auto-commit -f -r new "${THE_ARGS[@]}"

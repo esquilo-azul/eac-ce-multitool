@@ -28,7 +28,7 @@ function subrepo_clone() {
   if [ -n "$BRANCH" ]; then
     CLONE_ARGS+=(--branch "$BRANCH")
   fi
-  "${PROGRAMEIRO_RUNNER}" w/avm git subrepo clone "${CLONE_ARGS[@]}"
+  "${PROGRAMEIRO_RUNNER}" s/eac-tools git subrepo clone "${CLONE_ARGS[@]}"
 }
 
 function validate() {

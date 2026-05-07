@@ -2,4 +2,4 @@
 
 source "${BASH_TO_REQUIRE}"
 
-"${PROGRAMEIRO_RUNNER}" w/avm git subrepo check "$@"
+"${PROGRAMEIRO_RUNNER}" s/eac-tools git subrepo check "$@"

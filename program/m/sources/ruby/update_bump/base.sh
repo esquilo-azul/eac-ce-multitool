@@ -3,7 +3,7 @@
 source "${BASH_TO_REQUIRE}"
 
 function source_run() {
-  "${PROGRAMEIRO_RUNNER}" w/avm source --path "$SOURCE_PATH" "$@"
+  "${PROGRAMEIRO_RUNNER}" s/eac-tools source --path "$SOURCE_PATH" "$@"
 }
 
 SEGMENT_OPTION="$(cli_arg 1 '' "$@")"

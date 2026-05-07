@@ -20,7 +20,7 @@ class TheRunner
 
   # @return [EacRubyUtils::Envs::Command]
   def rename_command
-    ::Cliutils::Core.command('w/avm', 'eac-ruby-base1', 'lib-rename', '--recursive', '--from',
+    ::Cliutils::Core.command('s/eac-tools', 'eac-ruby-base1', 'lib-rename', '--recursive', '--from',
                              from, '--to', to, '.', *other_args)
   end
 end

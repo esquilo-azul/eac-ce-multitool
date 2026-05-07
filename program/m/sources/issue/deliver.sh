@@ -2,4 +2,4 @@
 
 source "${BASH_TO_REQUIRE}"
 
-"${PROGRAMEIRO_RUNNER}" w/avm source issue deliver --yes
+"${PROGRAMEIRO_RUNNER}" s/eac-tools source issue deliver --yes

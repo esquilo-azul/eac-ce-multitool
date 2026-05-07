@@ -58,7 +58,7 @@ class CompleteIssueRunner
   end
 
   def complete_method_uncached
-    trf1_project? ? '/s/pd1-tools' : 'w/avm'
+    trf1_project? ? '/s/pd1-tools' : 's/eac-tools'
   end
 
   def complete_command
@@ -89,7 +89,7 @@ class CompleteIssueRunner
   end
 
   def launcher_command(*)
-    ::Cliutils::Core.command('w/avm', 'launcher', 'publish', '--new', *)
+    ::Cliutils::Core.command('s/eac-tools', 'launcher', 'publish', '--new', *)
   end
 
   def launcher_instance_path

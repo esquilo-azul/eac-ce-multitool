@@ -115,7 +115,7 @@ class TheRunner
   end
 
   def rubocop_command
-    ::Cliutils::Core.command('w/avm', 'source', 'bundle', 'exec', 'rubocop', '--',
+    ::Cliutils::Core.command('s/eac-tools', 'source', 'bundle', 'exec', 'rubocop', '--',
                              '--ignore-parent-exclusion', '--format', 'json')
   end
 end

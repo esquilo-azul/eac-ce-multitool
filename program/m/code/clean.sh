@@ -2,4 +2,4 @@
 
 source "${BASH_TO_REQUIRE}"
 
-"${PROGRAMEIRO_RUNNER}" w/avm files format --apply "$@"
+"${PROGRAMEIRO_RUNNER}" s/eac-tools files format --apply "$@"
