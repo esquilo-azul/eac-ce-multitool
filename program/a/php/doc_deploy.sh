@@ -13,7 +13,7 @@ function build() {
 }
 
 function deploy() {
-  "${PROGRAMEIRO_RUNNER}" f/sync --delete -vr --yes --target-mkdirp "$BUILDED_DIR" "$OUTPUT_URL"
+  "${PROGRAMEIRO_RUNNER}" f/sync/rsync --delete -vr --yes --target-mkdirp "$BUILDED_DIR" "$OUTPUT_URL"
 }
 
 if [ $# -lt 2 ]; then
