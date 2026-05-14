@@ -1,0 +1,16 @@
+---
+- :fs_type: :file
+  :fs_path: a.txt
+  :operation: :update_meta
+- :fs_type: :file
+  :fs_path: c_renomeado.txt
+  :operation: :create
+- :fs_type: :file
+  :fs_path: e_novo.txt
+  :operation: :create
+- :fs_type: :file
+  :fs_path: f.txt
+  :operation: :create
+- :fs_type: :file
+  :fs_path: pasta2/d_movido.txt
+  :operation: :create

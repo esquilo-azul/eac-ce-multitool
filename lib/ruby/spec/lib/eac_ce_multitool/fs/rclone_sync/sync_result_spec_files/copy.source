@@ -1,0 +1,7 @@
+{"level":"warning","msg":"Config file \"/home/eduardo/.config/rclone/rclone.conf\" not found - using defaults","source":"config/config.go:362","time":"2026-01-23T21:53:02.405311-03:00"}
+{"level":"error","msg":"Ignoring --track-renames as it doesn't work with copy or move, only sync","object":"Local file system at /home/eduardo/tmp/build/rclone-test/dest","objectType":"*local.Fs","source":"sync/sync.go:209","time":"2026-01-23T21:53:02.405802-03:00"}
+{"level":"info","msg":"Copied (new)","object":"e_novo.txt","objectType":"*local.Object","source":"operations/operations.go:566","time":"2026-01-23T21:53:02.406748-03:00"}
+{"level":"info","msg":"Copied (replaced existing)","object":"f.txt","objectType":"*local.Object","source":"operations/operations.go:566","time":"2026-01-23T21:53:02.406849-03:00"}
+{"level":"info","msg":"Updated modification time in destination","object":"a.txt","objectType":"*local.Object","source":"operations/operations.go:278","time":"2026-01-23T21:53:02.407071-03:00"}
+{"level":"info","msg":"Copied (new)","object":"c_renomeado.txt","objectType":"*local.Object","source":"operations/operations.go:566","time":"2026-01-23T21:53:02.407161-03:00"}
+{"level":"info","msg":"Copied (new)","object":"pasta2/d_movido.txt","objectType":"*local.Object","source":"operations/operations.go:566","time":"2026-01-23T21:53:02.407331-03:00"}

@@ -1,0 +1,12 @@
+{"level":"warning","msg":"Config file \"/home/eduardo/.config/rclone/rclone.conf\" not found - using defaults","source":"config/config.go:362","time":"2026-01-23T21:53:02.578682-03:00"}
+{"level":"info","msg":"Making map for --track-renames","object":"Local file system at /home/eduardo/tmp/build/rclone-test/dest","objectType":"*local.Fs","source":"sync/sync.go:760","time":"2026-01-23T21:53:02.580033-03:00"}
+{"level":"info","msg":"Updated modification time in destination","object":"a.txt","objectType":"*local.Object","source":"operations/operations.go:278","time":"2026-01-23T21:53:02.580324-03:00"}
+{"level":"info","msg":"Copied (replaced existing)","object":"f.txt","objectType":"*local.Object","source":"operations/operations.go:566","time":"2026-01-23T21:53:02.580397-03:00"}
+{"level":"info","msg":"Finished making map for --track-renames","object":"Local file system at /home/eduardo/tmp/build/rclone-test/dest","objectType":"*local.Fs","source":"sync/sync.go:795","time":"2026-01-23T21:53:02.580408-03:00"}
+{"level":"info","msg":"Moved (server-side) to: c_renomeado.txt","object":"c.txt","objectType":"*local.Object","source":"operations/operations.go:637","time":"2026-01-23T21:53:02.580773-03:00"}
+{"level":"info","msg":"Renamed from \"c.txt\"","object":"c_renomeado.txt","objectType":"*local.Object","source":"sync/sync.go:829","time":"2026-01-23T21:53:02.580852-03:00"}
+{"level":"info","msg":"Moved (server-side) to: pasta2/d_movido.txt","object":"pasta1/d.txt","objectType":"*local.Object","source":"operations/operations.go:637","time":"2026-01-23T21:53:02.581209-03:00"}
+{"level":"info","msg":"Renamed from \"pasta1/d.txt\"","object":"pasta2/d_movido.txt","objectType":"*local.Object","source":"sync/sync.go:829","time":"2026-01-23T21:53:02.581301-03:00"}
+{"level":"info","msg":"Copied (new)","object":"e_novo.txt","objectType":"*local.Object","source":"operations/operations.go:566","time":"2026-01-23T21:53:02.581232-03:00"}
+{"level":"info","msg":"Deleted","object":"b.txt","objectType":"*local.Object","source":"operations/operations.go:721","time":"2026-01-23T21:53:02.581448-03:00"}
+{"level":"info","msg":"Removing directory","object":"pasta1","objectType":"string","source":"operations/operations.go:1190","time":"2026-01-23T21:53:02.58152-03:00"}
